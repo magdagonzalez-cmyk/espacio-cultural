@@ -1,0 +1,22 @@
+---
+interface Props {
+    nombre: string;
+    descripcion: string;
+    imagen: string;
+}
+
+const { nombre, descripcion, imagen } = Astro.props;
+---
+
+<article class="tarjeta-taller">
+    <img
+        src={imagen}
+        alt={`Imagen del taller de ${nombre}`}
+        class="tarjeta-imagen"
+    />
+
+    <div class="tarjeta-contenido">
+        <h3>{nombre}</h3>
+        <p>{descripcion}</p>
+    </div>
+</article>

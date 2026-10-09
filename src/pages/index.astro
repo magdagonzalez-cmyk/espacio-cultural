@@ -1,16 +1,81 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import TarjetaTaller from "../components/TarjetaTaller.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Inicio">
+    <section class="hero">
+        <div class="contenedor hero-contenido">
+            <div class="hero-texto">
+                <span class="etiqueta">Bienvenidos</span>
+
+                <h1>
+                    Un lugar para
+                    <span>crear y aprender</span>
+                </h1>
+
+                <p>
+                    En Espacio Cultural creemos que el arte y la creatividad son
+                    herramientas para aprender, expresarnos y compartir con los
+                    demás.
+                </p>
+
+                <a href="/talleres" class="boton"> Ver nuestros talleres </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <div class="contenedor">
+            <div class="titulo-seccion">
+                <span class="etiqueta">Conoce nuestras actividades</span>
+
+                <h2>Talleres destacados</h2>
+
+                <p>
+                    Descubre algunas de las actividades que tenemos preparadas
+                    para nuestra comunidad.
+                </p>
+            </div>
+
+            <div class="grid-talleres">
+                <TarjetaTaller
+                    nombre="Fotografía"
+                    descripcion="Introducción a la composición y técnicas de fotografía digital."
+                    imagen="/img/fotografia.jpg"
+                />
+
+                <TarjetaTaller
+                    nombre="Cerámica"
+                    descripcion="Creación de objetos utilizando técnicas básicas de modelado."
+                    imagen="/img/ceramica.jpg"
+                />
+
+                <TarjetaTaller
+                    nombre="Escritura creativa"
+                    descripcion="Exploración de relatos breves y ejercicios de escritura."
+                    imagen="/img/escritura.jpg"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion seccion-destacada">
+        <div class="contenedor llamada">
+            <div>
+                <span class="etiqueta">Espacio Cultural</span>
+
+                <h2>Tu creatividad tiene un lugar</h2>
+
+                <p>
+                    Conoce todos nuestros talleres y encuentra una actividad que
+                    te inspire.
+                </p>
+            </div>
+
+            <a href="/talleres" class="boton boton-claro">
+                Ver todos los talleres
+            </a>
+        </div>
+    </section>
+</Layout>
