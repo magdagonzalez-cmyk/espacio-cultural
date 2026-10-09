@@ -1,0 +1,93 @@
+1- Necesito hacer un sitio web para mi evaluación de Desarrollo
+ Web. Debe ser un sitio multipágina desarrollado con Astro y 
+ seguir estrictamente los criterios de la guía y la rúbrica de 
+ evaluación que te entregué. El proyecto se llama
+  “Espacio Cultural” y debe incluir las páginas Inicio, 
+  Talleres y Nosotros, además de componentes reutilizables, 
+  props, un layout compartido y estilos CSS.
+
+2- Necesito el código completo de Header.astro, Footer.astro y TarjetaTaller.astro.
+
+Header.astro debe tener navegación funcional hacia Inicio, Talleres y Nosotros.
+
+Footer.astro debe incluir el nombre “Espacio Cultural” y un texto de pie de página.
+
+TarjetaTaller.astro debe ser reutilizable y recibir mediante props exactamente:
+
+nombre
+descripcion
+imagen
+
+El componente debe utilizarse tanto en Inicio como en Talleres con información diferente.
+
+3- Dame el código completo de Layout.astro. Debe incluir la 
+estructura HTML principal, importar y utilizar Header.astro 
+y Footer.astro, incluir <slot /> para mostrar el contenido de 
+cada página e importar el CSS global. Las tres páginas deben
+utilizar este layout.
+
+4- Dame el código completo de las tres páginas:
+
+index.astro
+talleres.astro
+nosotros.astro
+
+En Inicio debe aparecer una bienvenida, una presentación breve y tres talleres destacados.
+
+En Talleres debe aparecer un título, una descripción general y los cuatro talleres:
+
+Fotografía
+Cerámica
+Escritura creativa
+Ilustración
+
+En Nosotros debe aparecer una presentación de Espacio Cultural,
+ su propósito y una imagen representativa.
+
+5- Dame el código completo de global.css, procurando obtener una apariencia ordenada y
+    profesional sin complicar innecesariamente el proyecto.
+    Debe utilizar CSS Grid o Flexbox, colores y tipografías consistentes, 
+    márgenes, espaciados y dimensiones adecuadas. También debe tener diseño
+    responsive para que el sitio funcione correctamente en pantallas pequeñas.
+
+6- Utiliza las imágenes proporcionadas por el profesor dentro de public/img/. 
+    Indícame exactamente dónde debe ir cada imagen y cómo debo llamarla desde los archivos.astro.
+    No inventes imágenes si ya existen recursos proporcionados por el profesor.
+
+7-Revisa todo el proyecto siguiendo estrictamente la rúbrica de evaluación. Comprueba:
+
+estructura de carpetas;
+tres páginas funcionales;
+navegación;
+Layout;
+Header;
+Footer;
+TarjetaTaller;
+props nombre, descripcion e imagen;
+reutilización de componentes;
+CSS global;
+Flexbox o Grid;
+imágenes;
+funcionamiento con npm run dev.
+
+El objetivo es alcanzar el nivel Excelente (4 puntos) en todos los criterios posibles.
+
+
+
+Preguntas de Reflexión final
+
+1. ¿Qué elementos del proyecto fueron reutilizados?
+    Los elementos que utilizamos Layout, Header, Footer, TarjetaTaller.
+    La TarjetaTaller se utilizo en Inicio y talleres.
+
+2. ¿Qué ventajas tuvo utilizar un layout compartido?
+    Las ventajas que tuvo Layout compartido es mantener la estructura
+    para el proyecto, ademas de que nos facilito el trabajo.
+
+3. ¿Qué dificultades encontraron durante la integración del proyecto?
+    La primera dificultad que tuvimos fue que la IA no contestaba
+    lo que se pedia, mandandonos otras respuestas que no coincidian 
+    con lo que pediamos, teniendo que cambiar continuamente de IA, llegando
+    finalmente a CHATGPT.
+    La segunda dificultad que existio fue la confusion de carpetas, ya que 
+    la IA mandaba el codigo de otras carpetas y nos lanzaba al error.
